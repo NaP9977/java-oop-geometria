@@ -7,10 +7,11 @@
 
 package org.lessons.java.geometria;
 public class Rettangolo {
+
     int base;
     int altezza;
-    int area;
-    int perimetro;
+    static int area;
+    static int perimetro;
    Rettangolo( int base, int altezza){
        this.base = base;
        this.altezza = altezza;
@@ -18,11 +19,11 @@ public class Rettangolo {
        this.perimetro = perimetro;
 
    }
-    void calcolaArea(int base, int altezza){
+    static void calcolaArea(int base, int altezza){
         area = base * altezza;
    }
 
-   void calcolaPerimetro (int base, int altezza) {
+  static void calcolaPerimetro(int base, int altezza) {
        perimetro = (base + altezza) * 2;
     }
 
