@@ -29,7 +29,7 @@ public class Rettangolo {
        perimetro = (base + altezza) * 2;
     }
 
-static void Draw(){
+ void Draw(){
 
 }
 
