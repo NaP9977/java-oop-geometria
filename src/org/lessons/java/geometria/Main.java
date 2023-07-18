@@ -15,7 +15,7 @@ public class Main {
      System.out.println("L'area è: + " + ab.area);
      ab.calcolaPerimetro(baseInput, altezzaInput);
      System.out.println("Il perimetro è: " + ab.perimetro);
-         Rettangolo.Draw();
+         ab.Draw();
 
 
     }

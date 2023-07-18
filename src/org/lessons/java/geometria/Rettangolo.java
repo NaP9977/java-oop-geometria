@@ -12,7 +12,7 @@ public class Rettangolo {
     int base;
     int altezza;
    int area;
-     int perimetro;
+   int perimetro;
 
    Rettangolo( int base, int altezza){
        this.base = base;
