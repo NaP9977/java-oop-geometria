@@ -11,26 +11,40 @@ public class Rettangolo {
 
     int base;
     int altezza;
-   int area;
-   int perimetro;
+    int area;
+    int perimetro;
 
-   Rettangolo( int base, int altezza){
-       this.base = base;
-       this.altezza = altezza;
-       this.area = area;
-       this.perimetro = perimetro;
 
-   }
-   void calcolaArea(int base, int altezza){
-        area = base * altezza;
-   }
+    Rettangolo(int base, int altezza) {
+        this.base = base;
+        this.altezza = altezza;
+        this.area = area;
+        this.perimetro = perimetro;
 
- void calcolaPerimetro(int base, int altezza) {
-       perimetro = (base + altezza) * 2;
     }
 
- void Draw(){
+    void calcolaArea(int base, int altezza) {
+        area = base * altezza;
+    }
 
-}
+    void calcolaPerimetro(int base, int altezza) {
+        perimetro = (base + altezza) * 2;
+    }
 
+    void Draw() {
+
+        for (int i = 0; i < altezza; i++) {
+            for (int j = 0; j < base; j++)
+                if (i == 0 || i == altezza - 1) {
+                    System.out.print(0);
+
+                } else if (j == 0 || j == base - 1) {
+                    System.out.print(0);
+                } else {
+                    System.out.print(" ");
+                }
+            System.out.println();
+
+        }
+    }
 }
