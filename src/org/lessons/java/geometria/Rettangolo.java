@@ -11,24 +11,21 @@ public class Rettangolo {
 
     int base;
     int altezza;
-    int area;
-    int perimetro;
+     int area;
+     int perimetro;
 
 
     Rettangolo(int base, int altezza) {
         this.base = base;
         this.altezza = altezza;
-        this.area = area;
-        this.perimetro = perimetro;
-
     }
 
-    void calcolaArea(int base, int altezza) {
-        area = base * altezza;
+    int calcolaArea() {
+        return area = base * altezza;
     }
 
-    void calcolaPerimetro(int base, int altezza) {
-        perimetro = (base + altezza) * 2;
+    int calcolaPerimetro() {
+       return  perimetro = (base + altezza) * 2;
     }
 
     void Draw() {

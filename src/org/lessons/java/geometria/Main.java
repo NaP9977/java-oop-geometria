@@ -11,9 +11,9 @@ public class Main {
         System.out.println("La base è: " + baseInput);
         System.out.println("L'altezza è: " + altezzaInput);
         Rettangolo ab = new Rettangolo(altezzaInput, baseInput);
-       ab.calcolaArea(baseInput, altezzaInput);
+
      System.out.println("L'area è: + " + ab.area);
-     ab.calcolaPerimetro(baseInput, altezzaInput);
+
      System.out.println("Il perimetro è: " + ab.perimetro);
          ab.Draw();
 
